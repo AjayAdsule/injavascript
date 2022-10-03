@@ -1,0 +1,5 @@
+Agenda
+Array
+methods ,slice,map,filter,reduce,foreach
+array destuctring
+set,spread,rest opreator
