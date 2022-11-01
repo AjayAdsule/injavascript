@@ -1,0 +1,6 @@
+set - map -string
+Functional programming
+callback
+higher order Functional
+closure
+monoization
