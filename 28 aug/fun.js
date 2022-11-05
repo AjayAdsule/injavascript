@@ -1,6 +1,6 @@
 console.log("Hii")
 
-// ou can add timwe when your fuction is run
+// you can add time when your fuction is run
 setTimeout(() => {
     console.log("Hello")
 }, 2000);
@@ -42,3 +42,4 @@ function add(){
 }
 let result= add();
 result()
+
