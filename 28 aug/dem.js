@@ -33,5 +33,5 @@ function dem(){
     }
 }
 let result=dem()
-// result(7)
+result(7)
 // dem()
