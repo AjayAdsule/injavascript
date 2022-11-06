@@ -15,7 +15,23 @@
 // let person= new student ("ajay",22,1999)
 // person.greet()
 
-let add= (a,b)=>{
-    console.log(a+b)
+// let add= (a,b)=>{
+//     console.log(a+b)
+// }
+// add(5,4)
+
+
+// for(let i=0;i<10;i++){
+//     console.log(i)
+// }
+
+function dem(){
+    let a=10;
+    console.log(`inner is ${a}`)
+    return function (num){
+        console.log(`this is outer part ${num}`)
+    }
 }
-add(5,4)
+let result=dem()
+result(7)
+// dem()
