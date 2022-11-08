@@ -1,4 +1,4 @@
-let str="Ajay is programmer is is is "
+let str="Ajay is programmer"
 //console.log(str.length) 18
 var a=str.toUpperCase()
 console.log(a)
@@ -13,4 +13,11 @@ console.log(a)
 var a=str.search("g") //11
 console.log(a)
 var a=str.match(/is/g)
+console.log(a)
+var b= String.fromCharCode(65)
+console.log(b)
+var a= str.length
+console.log(a)
+console.log(str.slice(0,10))
+var a = str.substring(0,10)
 console.log(a)
