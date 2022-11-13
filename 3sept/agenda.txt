@@ -1,1 +1,3 @@
 Regax=It will use pattern match,searching , replacing
+
+If you take inpust as text it use for searchibng matching with help of regex
