@@ -1,0 +1,1 @@
+Regax=It will use pattern match,searching , replacing
