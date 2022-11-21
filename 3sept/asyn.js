@@ -11,3 +11,6 @@ const fun2=()=>{
     console.log('fun1 is ending')
 }
 fun1()
+
+let a= prompt('enter your name')
+console.log(a)

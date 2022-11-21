@@ -5,3 +5,5 @@ If you take input as text it use for searching matching with help of regex
 In case sensitive you can write(i)in last line
 regax syntax=//
 [^]= This is called not (for example ^0-5 in your text should be not 0-5)
+
+take note of(call stack.asyncorous,call back quea)
