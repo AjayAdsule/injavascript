@@ -19,10 +19,10 @@ function gethollawithdelay(){
 }
 
 async function caller(){
-    const sync=getsyncmessage();
+    const sync=  getsyncmessage();
     console.log(getTimeClock(),sync);
 
-    const hellopromise= await gethellfrompromise();
+    const hellopromise= await  gethellfrompromise();
     console.log(getTimeClock(),hellopromise);
 
     const dely= await gethollawithdelay();
