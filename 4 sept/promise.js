@@ -18,10 +18,13 @@
 
 async function f(){
     let promise =new Promise((resolve,reject)=>{
-        setTimeout(()=> resolve('done'),3000)
-    })
-    let result=await promise;
+        setTimeout(()=> resolve('done'),1000)
+    }
+    )
+    
+    let result= await promise;
     console.log(`i am ${result} with job`)
+    console.log("i am blockchai devloper")
 }
 f()
 
