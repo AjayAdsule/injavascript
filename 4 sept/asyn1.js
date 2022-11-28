@@ -22,10 +22,12 @@ async function caller(){
     const sync=  getsyncmessage();
     console.log(getTimeClock(),sync);
 
+    const dely= await gethollawithdelay();
+    console.log(getTimeClock(),dely)
+
     const hellopromise= await  gethellfrompromise();
     console.log(getTimeClock(),hellopromise);
 
-    const dely= await gethollawithdelay();
-    console.log(getTimeClock(),dely)
+   
 }
 caller()
