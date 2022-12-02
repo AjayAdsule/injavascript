@@ -10,10 +10,6 @@ let a=["ajay","vijay","dipal","javascript","python","node"]
 let d=["ajay","vijay","dipal","javascript","python","node"]
 let z=d[Symbol.iterator]();
 //console.log(typeof d[Symbol.iterator]()); //object
+
 console.log(z.next())
-console.log(z.next())
-console.log(z.next())
-console.log(z.next())
-console.log(z.next())
-console.log(z.next())
-console.log(z.next())
+console.log(z.next().value)// if you give (value)it will not give you done 
