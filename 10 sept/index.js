@@ -1,9 +1,19 @@
-let a=["ajay","vijay","dipal"]
+let a=["ajay","vijay","dipal","javascript","python","node"]
+// console.log(a.length)
+// for (let i=0;i<5;i++){
+//     console.log(a[i]);
+// }
 
-for (let i=0;i<a.length;i++){
-    console.log(a[i]);
-}
-let b= [1,54,465,84,4152,42]
-for (let c=0;c>b.length;b++){
-    console.log(b[c])
-}
+// for(let a=0;a<20;a++){
+//     // console.log(a)
+// }
+let d=["ajay","vijay","dipal","javascript","python","node"]
+let z=d[Symbol.iterator]();
+//console.log(typeof d[Symbol.iterator]()); //object
+console.log(z.next())
+console.log(z.next())
+console.log(z.next())
+console.log(z.next())
+console.log(z.next())
+console.log(z.next())
+console.log(z.next())
