@@ -25,39 +25,39 @@
 // result.next()
 // console.log(result.next())
 
-//sync function
-// function getTimeClock(){
-//     return new Date().getHours()
-//     +":"
-//     + new Date().getMinutes()
-//     +":"
-//     + new Date().getSeconds()
-// }
-// function normal(){
-//     return (" I am normal function")
-// }
-// function prom(){
-//     return Promise.resolve("i am promise function")
-// }
-// function timeout(){
-//     return new Promise((resolve,reject)=>{
-//         setTimeout(() => {
-//             resolve("i am settimeout function")
-//         }, 2000);
-//     })
-// }
+// sync function
+function getTimeClock(){
+    return new Date().getHours()
+    +":"
+    + new Date().getMinutes()
+    +":"
+    + new Date().getSeconds()
+}
+function normal(){
+    return (" I am normal function")
+}
+function prom(){
+    return Promise.resolve("i am promise function")
+}
+function timeout(){
+    return new Promise((resolve,reject)=>{
+        setTimeout(() => {
+            resolve("i am settimeout function")
+        }, 2000);
+    })
+}
 
-// async function caller(){
-//     const nom=normal();
-//     console.log(getTimeClock(),nom)
+async function caller(){
+    const nom=normal();
+    console.log(getTimeClock(),nom)
 
-//     const promi= prom()
-//     console.log(getTimeClock(),promi)
+    const promi= prom()
+    console.log(getTimeClock(),promi)
 
-//     const tim=await timeout();
-//     console.log(getTimeClock(),tim)
-// }
-// caller();
+    const tim= await timeout();
+    console.log(getTimeClock(),tim)
+}
+caller();
 
 // class student{
 //     constructor(name,age,yop){

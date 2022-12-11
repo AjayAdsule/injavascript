@@ -1,0 +1,1 @@
+//today agenda is learn how to take input from user
