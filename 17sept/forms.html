@@ -7,6 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <input placeholder="username" id="text1"><br>
+    <input type="password"  id="text2" placeholder="password"><br>
+    <button onclick="f1()">click here</button>
+    <script>
+        function f1(){
+            let str1=document.getElementById("text1").value
+            let str2=document.getElementById("text2").value
+            window.alert(str1)
+            window.alert(str2)
+        }
+    </script>
 </body>
 </html>

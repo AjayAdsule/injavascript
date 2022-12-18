@@ -1,0 +1,8 @@
+data input validation
+debugging chrome
+
+regex words is use as follow
+/d=Is start for digit
+/w=is start for words
+\s= is start for space(single space)
+\t=check for tabs

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- <script src="val.js"></script> -->
+    <title>name validate</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function cha(){
+    let text=document.getElementById("txt").value
+    let regex=/[abc]/; //you want to write in bracket what you want to verify
+    if(regex.test(text)){
+        document.getElementById("lab1").innerHTML="valid"
+        document.getElementById("lab1").style.visibility="visible"
+        document.getElementById("lab1").style.color="green"
+    }
+    else{
+        document.getElementById("lab1").innerHTML="Invalid"
+        document.getElementById("lab1").style.visibility="visible"
+        document.getElementById("lab1").style.color="red"
+    }
+}
+    </script>
+    <form >
+       <input type="text" id="txt" placeholder="enter num"><br>
+       <label style="color:red; visibility:hidden"id="lab1">Invalid</label><br>
+       <button onclick="cha()"type="button">click here</button>
+    </form>
+</body>
+</html>

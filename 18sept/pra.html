@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="pra.js"></script>
+    <title>practise</title>
+</head>
+<body>
+    <input type="text"  id="in1" placeholder="enter word"><br>
+    <label id="lb1" style="color: red; visibility: hidden;">Invalid</label><br>
+    <button type="button" id="bt1" onclick="fun1()">click here</button>
+    <script type="text/javascript">
+        function fun1(){
+            let text=document.getElementById("in1").value;
+            let regax=/^[6-9]\d{9}$/;
+            if(regax.test(text)){
+                document.getElementById("lb1").innerHTML="valid";
+                document.getElementById("lb1").style.visibility="visible";
+                document.getElementById("lb1").style.color="green";
+            }
+            else{
+                document.getElementById("lb1").innerHTML="invalid";
+                document.getElementById("lb1").style.visibility="visible";
+                document.getElementById("lb1").style.color="red";
+            }
+
+        }
+    </script>
+</body>
+</html>

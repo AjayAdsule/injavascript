@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Radio button</title>
+    </head>
+    <body>
+        <!-- if you put name same value you can highlight one of them -->
+        <input type="radio"value="blockchain" id="first"name="btn1">blockchain</input><br>
+        <input type="radio"value="javascript" id="second"name="btn1">javascript</input><br>
+        <button onclick="f1()">submit</button>
+    </body>
+    <script>
+        function f1(){
+            let rd1=document.getElementById("first")
+            let rd2=document.getElementById("second")
+            if(rd1.checked==true){
+                alert("you select "+ rd1.value +" course")
+            }
+            else if(rd1.checked==true){
+                alert("you select "+rd2.value)
+            }
+            else{
+                alert("you did not select any option")
+            }
+           
+        }
+    </script>
+</html>
