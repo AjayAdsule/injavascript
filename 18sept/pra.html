@@ -14,7 +14,7 @@
     <script type="text/javascript">
         function fun1(){
             let text=document.getElementById("in1").value;
-            let regax=/^[6-9]\d{9}$/;
+            let regax=/^[6-9]\d{2}-\d{3}-\d{4}$/;
             if(regax.test(text)){
                 document.getElementById("lb1").innerHTML="valid";
                 document.getElementById("lb1").style.visibility="visible";
@@ -25,7 +25,7 @@
                 document.getElementById("lb1").style.visibility="visible";
                 document.getElementById("lb1").style.color="red";
             }
-
+//989-989-9898
         }
     </script>
 </body>
