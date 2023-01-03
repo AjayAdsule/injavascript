@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="enter email" id="em1"><br>
+    <label id="lbt" style="color: red;visibility: hidden;">Invalid</label><br>
+    <button id="btn" onclick="f1()">submit</button>
+    <script type="text/javascript">
+        function f1(){
+            let text=document.getElementById("em1").value
+            let re=/^([a-zA-Z0-9\._]+)@([a-zA-Z0-9]+).([a-zA-Z0-9\._])$/
+            if(re.test(text)){
+                document.getElementById("lbt").innerHTML="valid"
+                document.getElementById("lbt").style.color="green"
+                document.getElementById("lbt").style.visibility="visible"
+
+            }
+            else{
+                document.getElementById("lbt").innerHTML="invalid"
+                document.getElementById("lbt").style.color="red"
+                document.getElementById("lbt").style.visibility="visible"
+            }
+        }
+    </script>
+</body>
+</html>

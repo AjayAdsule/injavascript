@@ -1,6 +1,8 @@
-async function run(){
-    for(let i=1;i<10;i++)
-    await console.log(i)
+let email="@ajayadsule5@gmail.in"
+let regax=/^([a-zA-z0-9\.-_]+)@([a-zA-Z0-9]+).([a-zA-Z]{2,10})$/
+if(regax.test){
+    console.log("valid")
 }
-run()
-console.log("hello")
+else{
+    console.log("invalid")
+}
