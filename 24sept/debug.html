@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug</title>
+</head>
+<body>
+    <input type="text" id="f1" placeholder="enter "><br>
+    <input type="text" id="f2" placeholder="enter "><br>
+    <button onclick="add()" id="addition">click here</button>
+    <h4 id="output"></h4>
+
+    <script type="text/javascript">
+            function add(){
+                let a=document.getElementById("f1").value
+                let b=document.getElementById("f2").value
+                let result=document.getElementById("output").innerHTML="result = "+(a+b);
+            }
+    </script>
+</body>
+</html>

@@ -13,8 +13,9 @@
     <script type="text/javascript">
         function f1(){
             let text=document.getElementById("em1").value
-            let re=/^([a-zA-Z0-9\._]+)@([a-zA-Z0-9]+).([a-zA-Z0-9\._])$/
-            if(re.test(text)){
+            // let re=/^([a-zA-Z0-9\._]+)@([a-zA-Z0-9]+).([a-zA-Z0-9\._])$/
+            let regax=/^([a-zA-Z0-9\.-_]+)@([a-zA-Z0-9-]+).([a-zA-Z]){2,10}$/
+            if(regax.test(text)){
                 document.getElementById("lbt").innerHTML="valid"
                 document.getElementById("lbt").style.color="green"
                 document.getElementById("lbt").style.visibility="visible"
@@ -27,5 +28,6 @@
             }
         }
     </script>
+
 </body>
 </html>

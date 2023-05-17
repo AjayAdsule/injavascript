@@ -1,0 +1,7 @@
+mempool
+orphan blocks
+51% attack
+UTXO
+wallet
+public key vs address
+cpu vs gpu

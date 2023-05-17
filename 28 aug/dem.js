@@ -36,12 +36,54 @@
 // result(7)
 // // dem()
 
-function a(){
-    let a="outer"
-    console.log(`this is ${a}`)
-    return ()=>{
-        console.log('inner')
+// function a(){
+//     let a="outer"
+//     console.log(`this is ${a}`)
+//     return ()=>{
+//         console.log('inner')
+//     }
+// }
+// let res=a()
+// res()
+
+// class man{
+//     constructor(name,age,dob){
+//         this.name=name
+//         this.age=age
+//         this.dov=dob
+//     }
+//     greet(){
+//         console.log(`my name is ${this.name}`)
+//         console.log(`my age is ${this.age}`)
+//         console.log(`my dob is ${this.dob}`)
+//     }
+// }
+// let ajay=new man("ajay",22,1999)
+// ajay.greet()
+
+class women{
+    constructor(name,age,dob){
+        this.name=name;
+        this.age=age
+        this.dob=dob
+        this.add="ghatkoper"
+    }
+    caller(){
+        console.log(`my name is ${this.name}`)
+        console.log(`my dob is ${this.dob}`)
+        console.log(`my age is ${this.age}`)
+        console.log(`my add is ${this.add}`)
     }
 }
-let res=a()
-res()
+ let pr=new women("radhe,22,2000")
+//  pr.caller()
+
+function pra(){
+    let c="outer";
+    console.log(`this is ${c} function`)
+    return ()=>{
+       
+        console.log(`this is inner function`)
+    }
+}
+pra()

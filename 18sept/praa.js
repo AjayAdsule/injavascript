@@ -62,5 +62,5 @@ async function caller(){
     let se= await set()
     console.log(getTimeClock(),se)
 }
-caller()
+// caller()
 
